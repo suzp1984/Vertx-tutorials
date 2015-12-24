@@ -17,6 +17,8 @@ public class App
         Vertx vertx = Vertx.vertx();
         vertx.deployVerticle(myVerticle);
 
+        vertx.deployVerticle("com.github.suzp1984.vertx.testcore.SecondVerticle");
+
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
